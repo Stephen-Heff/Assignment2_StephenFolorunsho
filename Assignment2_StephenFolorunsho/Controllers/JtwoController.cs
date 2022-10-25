@@ -10,10 +10,10 @@ namespace Assignment2_StephenFolorunsho.Controllers
     public class JtwoController : ApiController
     {
 		/// <summary>
-		/// Write aprogram that will take a short form of a word and output the translation
+		/// Write a program that will take a short form of a word and output the translation
 		/// </summary>
-		/// <param name="input"></param>
-		/// <returns></returns>
+		/// <param name="input">The input will return the translation</param>
+		/// <returns>The output attached to the input</returns>
 		/// <example>
 		/// GET: api/Jtwo/speak/{CU} -> see you
 		/// GET: api/Jtwo/speak/{CUZ} -> because
@@ -21,7 +21,7 @@ namespace Assignment2_StephenFolorunsho.Controllers
 		[Route("api/Jtwo/speak/{input}")]
 		[HttpGet]
 
-		public string speak(string input)
+		public dynamic speak(string input)
         {
 			
 			while (true)
