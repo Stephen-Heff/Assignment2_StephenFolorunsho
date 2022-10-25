@@ -18,6 +18,7 @@ namespace Assignment2_StephenFolorunsho.Controllers
 		/// GET: api/Jtwo/speak/{CU} -> see you
 		/// GET: api/Jtwo/speak/{CUZ} -> because
 		/// </example>
+		/// The program does not run for emoticon inputs eg ":-)"  and "(~.~)" and I  do not know why. 
 		[Route("api/Jtwo/speak/{input}")]
 		[HttpGet]
 
